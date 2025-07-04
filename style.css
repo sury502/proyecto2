@@ -1,0 +1,219 @@
+body {
+    text-align: center;
+    font-family: comic sans ms;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/87e5b34d-24ee-464a-8c85-677cd666ffc8/d6afvyn-3cee9997-5a9e-43ab-8762-3f3bd103db8d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg3ZTViMzRkLTI0ZWUtNDY0YS04Yzg1LTY3N2NkNjY2ZmZjOFwvZDZhZnZ5bi0zY2VlOTk5Ny01YTllLTQzYWItODc2Mi0zZjNiZDEwM2RiOGQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TtSLGvVHAIBM-uVaL19MFWd6JEeci1CUk88szp9XpNs);
+    background-size: contain;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+    line-height: 1.6;
+    /* Mejora la legibilidad del texto */
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1fd1e9;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: rgba(20, 16, 17, 0.671);
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #e100ff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a {
+    display: flex;
+    padding: 23px 20px;
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background: #16d0ff;
+}
+
+.content {
+    padding-top: 63px;
+    padding-left: 20px;
+    min-height: calc(100vh - 63px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #7b0491;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+    border-radius: 5px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background: none;/
+}
+
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+/*caja "hola"*/
+.sau {
+    background: #1b1b1b6c;
+    height: 100%;
+    width: 100%;
+}
+
+/*nooso*/
+.about {
+    background-color: #1d1d1d8f;
+}
+
+
+.content.about img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+
+
+.contact {
+    padding: 20px;
+    background: #333333ce;
+    padding-bottom: 220px;
+}
+
+
+/* cajas */
+.box-section {
+    padding: 60px 20px;
+    background-color: #70353500;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+.box {
+    background-color: #0c0c0cbd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(63, 63, 63);
+    padding: 30px 20px;
+    text-align: center;
+    flex-basis: calc(33.333% - 30px);
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.384)
+}
+
+.box i {
+    font-size: 60px;
+    color: #00CCFF;
+    margin-bottom: 20px;
+}
+
+
+.box h3 {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+.box p {
+    font-size: 16px;
+    color: #BFBFBF;
+    line-height: 1.6;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+
+@media (max-width: 992px) {
+    .box {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 576px) {
+    .box-container {
+        gap: 20px;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 25px 15px;
+    }
+
+    .box i {
+        font-size: 50px;
+    }
+
+    .box h3 {
+        font-size: 22px;
+    }
+
+    .box p {
+        font-size: 15px;
+    }
+}
